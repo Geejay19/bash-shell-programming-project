@@ -1,113 +1,271 @@
 # 🐧 Linux Bash Programming Project
 
 ## 📌 Project Overview
-This project was developed as part of the **Operating System Concepts and Linux System Programming** course. It demonstrates a comprehensive understanding of **Bash shell programming** through practical implementation of scripts, command-line operations, and a functional calculator application.
 
-All tasks were performed in a **WSL Ubuntu environment**, allowing hands-on experience with real Linux system behavior.
+This project was developed as part of the **Operating System Concepts and Linux System Programming** course. The project demonstrates practical knowledge of **Linux commands** and **Bash shell scripting** through several small scripts, test files, and a calculator application.
+
+The work was completed in a **WSL Ubuntu environment on Windows**, allowing Bash scripts and Linux commands to be tested in a real Linux terminal environment.
 
 ---
 
 ## 🛠️ Environment
-- **Operating System:** Windows (WSL Ubuntu)
+
+- **Operating System:** Windows with WSL Ubuntu
 - **Shell:** GNU Bash
+- **Programming Language:** Bash Shell Script
+- **Platform:** Linux terminal
 - **Tools Used:**
-  - Linux command-line utilities (ls, grep, pwd, echo, etc.)
-  - Bash scripting
-  - File manipulation and redirection
-- **Platform:** Windows Subsystem for Linux (WSL)
+  - WSL Ubuntu
+  - Bash shell
+  - Linux command-line utilities
+  - Git
+  - GitHub
 
 ---
 
 ## ⚙️ Features
-This project covers a wide range of Bash scripting concepts:
 
-- ✅ Basic Linux command execution  
-- ✅ Shell scripting fundamentals  
-- ✅ Control structures:
-  - `if`, `case`, `select`
-  - `for`, `while`, `until` loops  
-- ✅ Functions and modular scripting  
-- ✅ Command-line arguments handling  
-- ✅ User input processing (`read`)  
-- ✅ File handling and redirection  
-- ✅ Variables and arrays  
-- ✅ Arithmetic operations  
-- ✅ Command substitution and expansion mechanisms  
-- ✅ Error handling and return values  
+This project includes examples and scripts related to important Bash programming concepts:
+
+- Basic Linux command usage
+- Bash script creation and execution
+- Variables and shell variables
+- User input handling using `read`
+- Command-line arguments
+- Conditional statements
+- `case` control structure
+- Shell functions
+- Arithmetic operations
+- Expansion mechanisms
+- Comments in Bash scripts
+- Return values and exit status
+- File handling and redirection
+- Basic calculator application
 
 ---
 
 ## 📂 Project Structure
 
+```text
 linux_bash_project/
-├── calculator/          # Main calculator application
+├── README.md
+│
+├── calculator/
 │   └── calculator.sh
 │
-├── scripts/             # Practice scripts
-│   ├── hello.sh
-│   ├── argument.sh
-│   ├── line_input.sh
-│   ├── function_example.sh
-│   ├── expansion.sh
-│   ├── comment.sh
-│   ├── return_value.sh
-│   └── goal11_case_control_structure.sh
+├── data/
+│   ├── all.txt
+│   ├── append.txt
+│   ├── data1.csv
+│   ├── data2.csv
+│   ├── error.txt
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.log
+│   ├── notes.txt
+│   ├── output.txt
+│   └── testfile.txt
 │
-├── data/                # Input and test files
-├── outputs/             # Output results
-├── docs/                # Project report
-└── README.md
+├── docs/
+│
+├── outputs/
+│
+└── scripts/
+    ├── argument.sh
+    ├── comment.sh
+    ├── expansion.sh
+    ├── function_example.sh
+    ├── goal11_case_control_structure.sh
+    ├── hello.sh
+    ├── line_input.sh
+    └── return_value.sh
+```
+
+---
 
 ## 🧮 Calculator Application
-The main component of the project is a Bash-based calculator script.
-🔹 Features:
 
-Accepts number of calculations as a command-line argument
-Prompts user for input values and operator
-Performs:
+The main application in this project is a Bash-based calculator script.
 
-Addition
-Subtraction
-Multiplication
+### File Location
 
+```text
+calculator/calculator.sh
+```
 
-Displays results dynamically
+### Description
 
-## ▶️ How to Run
-´
+The calculator script accepts a command-line argument that defines how many calculations the user wants to perform. During execution, the script asks the user to enter values and an arithmetic operation, then displays the result.
+
+### Supported Operations
+
+- Addition
+- Subtraction
+- Multiplication
+
+### How to Run
+
+Give execute permission:
+
+```bash
 chmod +x calculator/calculator.sh
+```
+
+Run the calculator:
+
+```bash
 ./calculator/calculator.sh 3
-´
+```
 
-🎯 Learning Outcomes
-Through this project, the following skills were developed:
+In this example, `3` means the script will perform three calculations.
 
-✅ Strong understanding of Linux command-line operations
-✅ Ability to write and execute Bash scripts
-✅ Knowledge of control structures and scripting logic
-✅ Experience with user interaction in scripts
-✅ Understanding of file handling and redirection mechanisms
-✅ Practical use of variables, arrays, and functions
-✅ Ability to combine multiple concepts into a working application
+---
 
+## 📜 Scripts Description
 
-## 🚀 Highlights
+### `scripts/hello.sh`
 
-Completed 33 Bash learning goals
-Built a functional calculator application
-Practiced real-world Linux scripting in WSL Ubuntu
-Organized project into a professional GitHub-ready structure
+A simple script used to practice creating and running a Bash script.
 
+### `scripts/comment.sh`
 
-## 📘 Future Improvements
+Demonstrates how comments are written and used in Bash scripts.
 
-Extend calculator with division and advanced operations
-Add error handling for invalid inputs
-Implement menu-based interface
-Expand scripts into real-world automation tasks
+### `scripts/argument.sh`
 
+Shows how command-line arguments such as `$0`, `$1`, `$2`, `$#`, and `$@` are used.
+
+### `scripts/line_input.sh`
+
+Demonstrates how to collect input from the user using the `read` command.
+
+### `scripts/function_example.sh`
+
+Shows how functions are created and used in Bash scripts.
+
+### `scripts/expansion.sh`
+
+Demonstrates Bash expansion concepts such as variable expansion, arithmetic expansion, and command substitution.
+
+### `scripts/return_value.sh`
+
+Shows how return values and exit statuses work in Bash.
+
+### `scripts/goal11_case_control_structure.sh`
+
+Demonstrates the `case` control structure for handling multiple choices.
+
+---
+
+## 📁 Data Directory
+
+The `data/` directory contains sample files used for testing Linux commands and Bash scripting concepts.
+
+It includes:
+
+- Text files
+- CSV files
+- Log files
+- Output files
+- Error files
+
+These files were used to practice file handling, pathname expansion, redirection, and command-line operations.
+
+---
+
+## 📁 Docs Directory
+
+The `docs/` directory is intended to store project documentation, such as the final report or screenshots.
+
+---
+
+## 📁 Outputs Directory
+
+The `outputs/` directory can be used to store output files generated by scripts.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I learned how to:
+
+- Use Linux commands in a terminal environment
+- Create and execute Bash scripts
+- Use variables and command-line arguments
+- Handle user input in scripts
+- Apply conditional statements and control structures
+- Use functions to organize script logic
+- Perform arithmetic operations in Bash
+- Work with files, outputs, and errors
+- Understand redirection and return values
+- Combine multiple Bash concepts into a working calculator script
+- Organize a Linux programming project for GitHub
+
+---
+
+## ▶️ How to Run the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Geejay19/bash-shell-programming-project.git
+```
+
+Move into the project folder:
+
+```bash
+cd bash-shell-programming-project
+```
+
+Give execute permission to scripts:
+
+```bash
+chmod +x calculator/*.sh
+chmod +x scripts/*.sh
+```
+
+Run the calculator:
+
+```bash
+./calculator/calculator.sh 3
+```
+
+Run any practice script:
+
+```bash
+./scripts/hello.sh
+```
+
+---
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+- Add division support to the calculator
+- Add better input validation
+- Add error handling for invalid operators
+- Store calculator results in the `outputs/` directory
+- Add screenshots to the `docs/` directory
+- Add more automation scripts
+- Improve script comments and documentation
+
+---
+
+## 📘 Course Information
+
+- **Course:** Operating System Concepts and Linux System Programming
+- **Topic:** Shell Programming with Bash
+- **Environment:** WSL Ubuntu on Windows
+
+---
 
 ## 👩‍💻 Author
-Geethika Jayasekara
-Operating System & Linux Programming Student
 
+**Geethika Jayasekara**
+
+---
+
+## 📄 License
+
+This project was created for academic learning purposes.
